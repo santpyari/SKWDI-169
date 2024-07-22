@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 40px;
+        }
+        .pricing-table {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .pricing-table th, .pricing-table td {
+            padding: 20px;
+            border: 1px solid #dee2e6;
+        }
+        .pricing-table th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .pricing-table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+        .pricing-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .pricing-table tbody tr:last-child {
+            border-bottom: 2px solid #dee2e6;
+        }
+        .pricing-table .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .pricing-table .plan-price {
+            font-size: 2rem;
+            color: #007bff;
+        }
+        .pricing-table .plan-description {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .pricing-table .btn {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .pricing-table .btn:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table pricing-table">
+            <thead>
+                <tr>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="plan-name">Basic</td>
+                    <td class="plan-price">$9.99/month</td>
+                    <td class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td><a href="#" class="btn">Choose Plan</a></td>
+                </tr>
+                <tr>
+                    <td class="plan-name">Standard</td>
+                    <td class="plan-price">$19.99/month</td>
+                    <td class="plan-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</td>
+                    <td><a href="#" class="btn">Choose Plan</a></td>
+                </tr>
+                <tr>
+                    <td class="plan-name">Premium</td>
+                    <td class="plan-price">$29.99/month</td>
+                    <td class="plan-description">Duis aute irure dolor in reprehenderit in voluptate velit.</td>
+                    <td><a href="#" class="btn">Choose Plan</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
